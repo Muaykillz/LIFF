@@ -13,7 +13,7 @@ async function main() {
     if (liff.isLoggedIn()) {
         console.log("LIFF is logged in.")
     } else {
-        liff.login();
+        liff.login({ redirectUri: "https://liff-six.vercel.app/query_param_passing/"});
     }
 }
 main()
