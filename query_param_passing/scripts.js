@@ -14,7 +14,7 @@ async function main() {
         console.log("LIFF is logged in.");
     } else {
         console.log("LIFF is not logged in.");
-        liff.login({ redirectUri: "https://liff-six.vercel.app/query_param_passing/"});
+        liff.login();
         // { redirectUri: "https://liff-six.vercel.app/query_param_passing/"}
     }
 }
