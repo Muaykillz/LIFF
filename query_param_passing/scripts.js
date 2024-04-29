@@ -7,3 +7,13 @@ document.getElementById('paramKey').innerText = key + ": ";
 document.getElementById('paramValue').innerText = value;
 
 console.log("Query String: ", queryString);
+
+async function main() {
+    await liff.init({ liffId: "1660687033-5prxxNRm" })
+    if (liff.isLoggedIn()) {
+        console.log("LIFF is logged in.")
+    } else {
+        liff.login();
+    }
+}
+main()
